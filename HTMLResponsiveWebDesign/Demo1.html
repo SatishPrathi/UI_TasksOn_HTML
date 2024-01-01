@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Example</title>
+    <style >
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            float: left;
+            width: 23%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        main {
+            float: left;
+            width: 57%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        aside {
+            float: left;
+            width: 20%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            clear: both;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav, main, aside {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Web Design</h1>
+    </header>
+
+    <nav>
+        <h2>Left Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Main Content</h2>
+        <p>This is the main content area.</p>
+    </main>
+
+    <aside>
+        <h2>Right Navigation</h2>
+        <p>This is the right navigation area.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Responsive Web Design Example</p>
+    </footer>
+
+</body>
+</html>

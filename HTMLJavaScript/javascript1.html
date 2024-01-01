@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Button Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #myButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #myButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Button Clicked!");
+        }
+
+        function changeText() {
+            var paragraph = document.getElementById("myParagraph");
+            paragraph.innerHTML = "Text changed by clicking the button!";
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Styled Button Example</h2>
+    <button id="myButton" onclick="showAlert()">Click me</button>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button onclick="changeText()">Change Text</button>
+
+</body>
+</html>

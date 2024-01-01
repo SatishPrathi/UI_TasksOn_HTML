@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example</title>
+    <title>Dynamic Content Example</title>
+
+    <script>
+        function showAlert() {
+            alert("Hello, this is an alert!");
+        }
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Hello, dynamic content!";
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="showAlert()">Click me for an alert</button>
+    
+    <p id="demo">Click the button to change this text.</p>
+    <button onclick="changeText()">Change Text</button>
+
+</body>
+</html>
